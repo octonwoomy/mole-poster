@@ -1,3 +1,5 @@
+const spinbtn = document.getElementById("spin");
+const img = document.getElementById("img");
 const moleFacts = [
     "Avogadro's number is named after the Italian scientist Amedeo Avogadro, who first proposed the concept.",
     "One mole of water molecules contains approximately 18 grams of water.",
@@ -12,3 +14,7 @@ function showMoleFact() {
     const moleFactElement = document.getElementById("moleFact");
     moleFactElement.textContent = fact;
 }
+
+spinbtn.addEventListener("click", () => {
+    img.classList.toggle("spin");
+})
